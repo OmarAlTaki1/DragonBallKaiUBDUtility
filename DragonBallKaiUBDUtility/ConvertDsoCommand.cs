@@ -59,7 +59,7 @@ namespace DragonBallKaiUBDUtility
         {
             DsoTexture dso = new(File.ReadAllBytes(inputFile));
             File.WriteAllBytes(outputFile, dso.Data);
-            //using FileStream fs = File.Create(_outputFile);
+            //using FileStream fs = File.Create(outputFile);
             //dso.GetImage().Encode(fs, SKEncodedImageFormat.Png, 1);
         }
 

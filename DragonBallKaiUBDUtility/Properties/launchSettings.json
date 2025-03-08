@@ -2,23 +2,31 @@
   "profiles": {
     "DragonBallKaiUBDUtility": {
       "commandName": "Project",
-      "commandLineArgs": "dsa-unpack -i .\\archiveDBK.dsa -o ..\\..\\archiveDBK",
-      "workingDirectory": "C:\\Users\\User\\PortableApps\\ROMHacking\\NDSHacking\\games\\dragon-ball\\unpack\\data"
+      "commandLineArgs": "dsa-unpack -i .\\archiveDB2.dsa -o ..\\..\\archiveDB2",
+      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)\\unpack\\data\\font\\jpn"
     },
     "ConvertDso": {
       "commandName": "Project",
-      "commandLineArgs": "convert-dso -i .\\211030_button1.dso -o .\\211030_button1test.dso",
-      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)"
+      "commandLineArgs": "convert-dso -i 211030_button1.dso -o ..\\dsos\\211030_button1decomp.dso",
+      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)\\archiveDBK.dsa\\res2D\\obj"
     },
     "CompressDso": {
       "commandName": "Project",
-      "commandLineArgs": "compress-dso -i .\\211030_button1decomp.dso -o .\\211030_button1comp2.dso",
-      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)"
+      "commandLineArgs": "compress-dso -i .\\606012_epicon03complete.dso -o .\\606012_epicon03compcomplete.dso",
+      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)\\archiveDBK.dsa\\res2D\\dsos"
     },
     "ConvertDsoDir": {
+      "commandName": "Project"
+    },
+    "CompressDsoDir": {
       "commandName": "Project",
-      "commandLineArgs": "convert-dso -id ..\\obj -od ..\\..\\res2D",
-      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)\\archiveDBK.dsa\\res2D\\obj"
+      "commandLineArgs": "compress-dso -id .\\dsos\\Complete -od .\\dsos\\compressed",
+      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)\\archiveDBK.dsa\\res2D"
+    },
+    "TopTexture": {
+      "commandName": "Project",
+      "commandLineArgs": "toptext-dso -i .\\dsos\\story -o .\\dsos\\story",
+      "workingDirectory": "C:\\Users\\oahta\\OneDrive\\Desktop\\ds stuff\\Dragon Ball Kai Ultimate Butouden (English Patch){Fixed} (SNASH)\\archiveDBK.dsa\\res2D"
     }
   }
 }
